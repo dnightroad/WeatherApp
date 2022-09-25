@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin:auto;
+    text-align: center;
+    padding:10%;
+    margin-top:10%;
+    background-color:#DFE8CC;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+
+  padding: 2px 16px;
+}
+
+button{
+  background-color:#647E68;
+  color:white;
+  padding:2%;
+  border-radius:15px;
+}
+</style>
+  </head>
+  <body>
+
+<div class="card">
+  <div class="container">
+    <h1>Check the weather for a city you'd like</h1>
+    <form class="cityName" action="/" method="post">
+      <label for="city">Type in your city:</label>
+      <input id="city" type="text" name="cityName" value="">
+<button type="submit" name="button">Check the weather</button>
+    </form>
+
+  </div>
+</div>
+
+  </body>
+</html>
